@@ -1,0 +1,81 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  
+}
+
+html, body {
+  /* De browser zet standaard wat margin op de body, die willen we weghalen */
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: white;
+  display:grid;
+  place-items: center;
+  background-color: rgb(29, 105, 29);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.field {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 60px;
+  background-color: rgb(158, 92, 27);
+  padding: 20px;
+}
+
+.hole {
+  position: relative;
+  border: 1px solid rgb(50, 46, 43);
+  border-radius: 100%;
+  background: rgb(82, 66, 50);
+  box-shadow: inset 0 0 10px 0 rgb(70, 43, 16);
+  overflow: hidden;
+}
+
+
+/* Add diglett image */
+.hole .mole {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  background: rgb(126, 84, 39);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  left: 50%;
+  transform: translateX(-500%);
+  bottom: 0;
+  animation: rise 1.5s ease-out infinite;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateX(-50%) translateY(120%);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(120%);
+  }
+}
+
+.hammer {
+  height: 120px;
+  width: 80px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: black;
+  background-size: 100%;
+  border-radius: 15px;
+  transform: translate(-20%, -20%);
+  transition: transform .1s;
+}
+
+.hammer.active {
+  transform: translate(-20%, -20%) rotate(-60deg);
+}
