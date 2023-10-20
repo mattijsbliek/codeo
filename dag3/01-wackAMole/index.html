@@ -7,11 +7,15 @@
   </head>
   <body>
       <div class="world">
-        <H1>Score: <span>00</span></H1>
+        <H1>Wack a mole</H1>
+        <p>
+          <span class="score">Score: <span>0</span>
+          <span class="timer">Time: <span>30</span></span>
+          <button class="start" onclick="startGame()">Start</button>
+        </p>
+        
         <div class="field">
-          <div class="hole">
-            <div class="mole"></div>
-          </div>
+          <div class="hole"></div>
           <div class="hole"></div>
           <div class="hole"></div>
           <div class="hole"></div>
@@ -23,8 +27,6 @@
           </div>  
       </div>
       <div class="hammer"></div>
-      
-
       <script src="./script.js"></script>
   </body>
 </html>
