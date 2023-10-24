@@ -1,12 +1,12 @@
 /*
- * We gaan het hebben over:
- * - display (inline, block)
+ * We're covering:
+ * - display
  * - width
  * - height
  * - margin
  * - padding
  *
- * Maar eerst: de CSS class
+ * But first: the CSS class
  */
 div {
   display: block;
