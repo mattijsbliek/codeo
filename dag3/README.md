@@ -1,20 +1,15 @@
 # Codeo Dag 3
 
-## Dagschema
+Zorg dat je de instructies van dag 2 gevolgd hebt, en NodeJS geïnstalleerd hebt
+op je computer. Hierna kun je alle 6 de stukjes code één voor één draaien met de 
+volgende commando's in de terminal:
 
-| Starttijd | Activiteit                |
-|-----------|---------------------------| 
-| 09:30     | Inloop                    |
-| 10:00     | Dagstart                  |
-| 10:05     | [Formulieren]             |
-| 11:00     | Pauze                     |
-| 11:10     | [Formulieren]             |
-| 12:00     | Lunch en spelletjes       |
-| 13:00     | [Eindopdracht]            |
-| 14:30     | Pauze                     |
-| 14:40     | [Eindopdracht]            |
-| 15:30     | Presentaties en afronding |
+npm run start-1
+npm run start-2
+npm run start-3
+npm run start-4
+npm run start-5
+npm run start-6
 
-[Form elements]: ./01-form-elements.html
-[Form interactivity]: ./02-form-interactivity.html
-[Final Assignment (part 1)]: ./../final-assigment/index.html
+Kies welk stukje je wil draaien, waarschijnlijk heb je ze niet alle 6 tegelijk 
+nodig.

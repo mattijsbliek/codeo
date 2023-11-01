@@ -1,12 +1,9 @@
 {
-  "name": "codeo-dag2",
+  "name": "code-dag2",
   "version": "1.0.0",
-  "description": "Codeo Dag 2",
-  "main": "index.js",
+  "description": "",
   "scripts": {
-    "start-5": "npx parcel ./05-variables-loops-conditionals/index.html",
-    "start-6": "npx parcel ./06-interactivity/index.html",
-    "start-7": "npx parcel ./07-opdracht-2/index.html"
+    "start": "npx live-server"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.player {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+  user-select: none;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+}
+
+.winner {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.winner.is-active {
+  display: block;
+}
+
+.winner__modal {
+  min-width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 50px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.winner span {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 40px;
+}
+
+.winner button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 20px;
+  background-color: rgb(52, 176, 52);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}
+
+.start {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: rgb(52, 176, 52);
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.start.hidden {
+  display: none;
+}

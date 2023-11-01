@@ -1,24 +1,14 @@
-# Codeo Dag 2: CSS (vervolg) & JavaScript
+# Codeo Dag 2
 
-## Dagschema
+Om de code werkend te krijgen, moet je een programma op je computer installeren genaamd Node.js. Je kan dit
+download door naar https://nodejs.org/en te gaan en op de linker groene knop te klikken. Vervolgens moet je
+het op je computer installeren.
 
-| Starttijd | Activiteit                |
-|-----------|---------------------------| 
-| 09:30     | Inloop                    |
-| 10:00     | Dagstart                  |
-| 10:05     | [CSS]                     |
-| 11:00     | Pauze                     |
-| 11:10     | [CSS]                     |
-| 12:00     | Lunch en spelletjes       |
-| 13:00     | [JavaScript]              |
-| 14:30     | Pauze                     |
-| 14:40     | [JavaScript]              |
-| 15:30     | Presentaties en afronding |
+Hierna kun je in VSCode bovenin op Terminal > New Terminal klikken, het volgende commando typen en op enter
+drukken:
 
-## JavaScript app starten
+npm run start
 
-Vervang het cijfer 5 hieronder door de oefening die je wilt starten. Alleen
-voor oefening 5, 6, en 7.
-```
-npm run start-5
-```
+Misschien wordt je gevraagd of er iets geïnstalleerd mag worden, type "y" en druk op enter.
+
+De drumcomputer wordt nu automatisch geopend in je browser.

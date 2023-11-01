@@ -1,8 +1,22 @@
-/**
- * We're covering
- * - flexbox
- * - grid
- */
-div {
-  display: block;
+body {
+  margin: 0;
+}
+
+.box {
+  height: 100px;
+  padding: 30px;
+  background-color: red;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }

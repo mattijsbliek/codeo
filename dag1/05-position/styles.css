@@ -1,9 +1,22 @@
-/*
- * We're covering
- * - position
- * - left/right/top/bottom
- * - z-index
- */
 div {
-  display: block;
+  padding: 30px;
+  background-color: red;
+}
+
+.box-1 {
+  position: relative;
+  left: 200px;
+  width: 50vw;
+}
+
+.box-2 {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+}
+
+.box-3 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }
