@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Codeo Dag 3",
   "scripts": {
-    "start": "npx live-server"
+    "start": "npx live-server --port=8081 "
   },
   "keywords": [],
   "author": "",
