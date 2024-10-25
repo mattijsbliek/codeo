@@ -1,0 +1,46 @@
+.hole {
+    border: 1px solid rgb(50, 46, 43);
+    border-radius: 100%;
+    background: rgb(82, 66, 50);
+    box-shadow: inset 0 0 10px 0 rgb(70, 43, 16);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hammer {
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url('assets/hammer.png');
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+}
+
+.hammer.active {
+    transform: translate(-20%, -20%) rotate(-60deg);
+}
+
+/* Exercise 3: Style the mole */
+.mole {
+    width: 70%;
+    height: 110px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: rise 0.3s ease-in-out;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateX(-50%) translateY(120%)
+    }
+    100% {
+        transform: translateX(-50%) translateY(0%)
+    }
+}
