@@ -3,12 +3,7 @@
   "version": "1.0.0",
   "description": "Codeo Dag 3",
   "scripts": {
-    "start-1": "npx live-server ./01-the-field/",
-    "start-2": "npx live-server ./02-interactive-hammer/",
-    "start-3": "npx live-server ./03-the-mole/",
-    "start-4": "npx live-server ./04-timeouts/",
-    "start-5": "npx live-server ./05-score/",
-    "start-6": "npx live-server ./06-gameloop/"
+    "start": "npx live-server --port=8081 "
   },
   "keywords": [],
   "author": "",
