@@ -39,3 +39,4 @@ Je kunt spelen met de lay-out van de pagina (zie flexbox en grid) in eerdere
 oefeningen. Gebruik kleuren, achtergrondkleuren en lettergroottes om er je eigen pagina van te maken.
 
 Vergeet niet dat kopiëren en stelen is toegestaan en wordt aangemoedigd!
+
