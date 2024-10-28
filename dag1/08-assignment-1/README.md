@@ -1,4 +1,4 @@
-# Opdracht 1
+# Opdracht 1 NL
 
 Je weet nu wat er nodig is om een basiswebsite te bouwen. Dus laten we dit proberen!
 Maak een bestand genaamd `index.html` (eigenlijk maakt de naam niet uit), evenals `styles.css`.
