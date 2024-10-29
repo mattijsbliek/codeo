@@ -6,26 +6,3 @@
  * - margin
  * - padding
  */
-div {
-  display: block;
-  margin-bottom: 30px;
-  padding: 10px;
-}
-
-div:nth-child(1) {
-  background: #f00;
-  width: 100px;
-  height: 100px;
-}
-
-div:nth-child(2) {
-  background: #0f0;
-  width: 200px;
-  height: 200px;
-}
-
-div:nth-child(3) {
-  background: #00f;
-  width: 300px;
-  height: 300px;
-}
