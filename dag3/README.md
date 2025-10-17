@@ -7,4 +7,4 @@ op je computer. Hierna kan je de code voor vandaag draaien door het volgende in 
 npm run start
 ```
 
-Hierna wordt Wack-A-Mole automatisch geopend in je browser. Je kan jouw eigen code toevoegen in de `index.html`, `main.js` en `styles.css` bestanden.
+Hierna wordt Wack-A-Mollie automatisch geopend in je browser. Je kan jouw eigen code toevoegen in de `index.html`, `main.js` en `styles.css` bestanden.
