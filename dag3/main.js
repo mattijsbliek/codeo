@@ -1,4 +1,4 @@
-import getRandomHole from "./random-hole.js";
+import { getRandomItemFromList } from "./random-item.js";
 
 console.log("##### Wack a mole #####");
 
@@ -15,21 +15,27 @@ let hammer = document.querySelector(".hammer");
 let scoreEl = document.querySelector(".score span");
 let score = 0;
 
+// De leraren van Codeo
+let teachers = ["femke", "mattijs", "erik", "ottie", "david"];
+
 function run() {
     // Get a random hole
-    let hole = getRandomHole(holes);
+    let hole = getRandomItemFromList(holes);
     let timer = null;
+
+    // get a teacher
+    let teacher = getRandomItemFromList(teachers);
 
     // Add the mole to that random hole
     let img = document.createElement("img");
     img.classList.add("mole");
-    img.src = "assets/mole.png";
+    img.src = "assets/teachers/" + teacher + ".png";
 
     img.addEventListener("click", () => {
         console.log("Whack!");
         score += 10;
         scoreEl.innerHTML = score;
-        img.src = "assets/mole-whacked.png";
+        img.src = "assets/teachers/" + teacher + "-whacked.png";
         clearTimeout(timer);
 
         setTimeout(() => {
