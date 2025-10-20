@@ -1,0 +1,76 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: white;
+  display:grid;
+  place-items: center;
+  background-color: rgb(29, 105, 29);
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+.field {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 60px;
+  background-color: rgb(158, 92, 27);
+  padding: 20px;
+}
+
+.field.game-over {
+  opacity: 0.5;
+}
+
+.hole {
+  position: relative;
+  border: 1px solid rgb(50, 46, 43);
+  border-radius: 100%;
+  background: rgb(82, 66, 50);
+  box-shadow: inset 0 0 10px 0 rgb(70, 43, 16);
+  overflow: hidden;
+}
+
+.hole .mole {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  animation: rise .3s ease-out;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateX(-50%) translateY(120%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%);
+  }
+}
+
+.hammer {
+  height: 110px;
+  width: 100px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-image: url('assets/hammer.png');
+  background-size: 100% 100%;
+  transform: translate(-20%, -20%);
+  transition: transform .1s;
+  pointer-events: none;
+}
+
+.hammer.active {
+  transform: translate(-20%, -20%) rotate(-60deg);
+}
