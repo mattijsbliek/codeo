@@ -2,6 +2,26 @@
 <html>
   <head>
     <title>Het Rode Vierkant</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border: 10px blue solid;
+        box-shadow: 10px 20px 50px black;
+        animation: linear 10s mattijs infinite;
+      }
+
+      @keyframes mattijs {
+        from {
+          transform: rotate(0);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <div>Ik ben een rood vierkant</div>
