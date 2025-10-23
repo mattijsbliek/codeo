@@ -1,4 +1,5 @@
 import timer from './timer';
+import Game from './game';
 
 let timerEl = document.querySelector('.timer span');
 let buttonEl = document.querySelector('button');
@@ -9,6 +10,8 @@ let initialScoreMessage = scoreEl.textContent;
 
 let score = 0;
 let initialTime = 10;
+
+let game = new Game();
 
 timer.set(initialTime);
 
@@ -36,6 +39,7 @@ buttonEl.addEventListener('click', () => {
 resetEl.addEventListener('click', () => {
   score = 0;
   timer.reset();
+  game.click();
   buttonEl.disabled = false;
   resetEl.classList.add('is-hidden');
   scoreEl.textContent = initialScoreMessage;
